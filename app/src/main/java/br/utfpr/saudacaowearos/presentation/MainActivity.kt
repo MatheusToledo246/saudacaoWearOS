@@ -75,7 +75,7 @@ fun obterSaudacaoUsuario(time : LocalTime): String{
     return when(time.hour){
         in 0..11 -> "Bom dia flor do dia!"
         in 12..17 -> "Boa tarde"
-        else ->  "Boa noite queridinho"
+        else ->  "Boa noite sr Matheus"
     }
 
 }
@@ -143,7 +143,7 @@ fun WearReminderWater(context: Context){
             manager.createNotificationChannel(channel)
         }
 
-        val TRIGGER_MINUTE = 59;
+        val TRIGGER_MINUTE = 24;
 
         while (true){
 
